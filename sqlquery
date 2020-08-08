@@ -1,0 +1,7 @@
+use dhivya;
+create table if not exists loginSignUp(lid int not null auto_increment,username varchar(20) not null,password varchar(20) not null,phonenum varchar(10) not null,image blob,primary key(lid))engine = InnoDB;
+insert into loginSignUp(username,password,phonenum,image) values('dhivya','dhivya','9488129030',load_file('C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/blueRose.jpg')),('vinodhini','vinodhini','8489614155',load_file('C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/blueRose.jpg')),('ashlin','ashlin','7867051735',load_file('C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/blueRose.jpg'));
+    
+select *from loginSignUp;
+select lid,username,password,phonenum from loginSignUp where  lid =1;
+drop table loginSignUp;
