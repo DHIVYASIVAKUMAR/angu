@@ -1,0 +1,18 @@
+<div>
+  <h1>Welcome to my page</h1> 
+  
+</div>
+<div classs='container'>
+  <form>
+      <label>Enter Username</label>
+      <input type='text' [(ngModel)]="lid" [ngModelOptions]="{standalone: true}" >
+      <label>Enter  password</label>
+      <input type='text' [(ngModel)]="password"  [ngModelOptions]="{standalone: true}">
+      <label>Enter phonenum</label>
+      <input type='text' [(ngModel)]="phonenum" [ngModelOptions]="{standalone: true}" >
+      <button (click)=submit()><a routerLink='/app-com'>submit</a></button>
+    
+  </form>
+  </div>
+
+<router-outlet></router-outlet>
